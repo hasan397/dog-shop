@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition-duration: 0.5s ;
+    -webkit-transition: ;
+    -moz-transition: ;
+    -ms-transition: ;
+    -o-transition: ;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: antiquewhite;
+}
+@media (min-width:768px){
+    .container{
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width:992px){
+    .container{
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width:1200px){
+    .container{
+      width: 1170px;
+    }
+  }
+nav{
+    padding: 10px 5px;
+    height: 60px;
+    background-color: antiquewhite;
+    position: relative;
+}
+nav .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:0 20px;
+    gap: 1rem;
+    position: absolute;
+    top: 20px;
+}
+.nav-1,
+.nav-3{
+
+    display: flex;
+    gap: 2rem;
+    letter-spacing: 2px;
+}
+a{
+    
+    text-decoration: none;
+    color: #68422d;
+    font-weight: 900;
+    font-size: 20px;
+}
+a:hover{
+    color: #F57F17;
+}
+/* end navbar */
+/* start main */
+.main{
+    height: calc(100vh - 50px);
+    background-image: url(../image/background.jpg);
+    background-size: cover;
+    position: relative;
+}
+.main .intro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+    text-align: center;
+    width: 325px;
+    max-width: 100%;
+}
+.main .intro h1{
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+}
+.main .intro h3{
+    line-height: 1.5;
+    letter-spacing: .5px;
+}
+/* end main */
+/* start second */
+.second div img{
+   width: 20rem;
+   background-color: aqua;
+   height: 15rem;
+}
+.second{
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.second div{
+    padding: 50px 0;
+    text-align: center;
+
+}
+.second img{
+    height: 10rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.second div .sec{
+    text-align: center;
+    padding: 5rem;
+}
+.sec h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+    
+}
+.sec p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    max-width: 15rem;
+    margin: 10px auto;
+    color:#68422d;
+    padding-bottom: 15px;
+}
+.seemore {
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: 1px solid #68422d;
+}
+.seemore button{
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.seemore:hover button{
+    color: aliceblue;
+    letter-spacing: 2.8px;
+}
+.seemore:hover{
+
+    background-color: #68422d;
+}
+/* end sec-2 */
+.counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: antiquewhite;
+    margin: 50px 0;
+}
+.pagenum{
+    padding: 10px;
+    border: 1px solid #68422d;
+    color: #68422d;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    text-align: center;
+}
+
+.right{
+    border-width: 25px;
+    border-style: solid;
+    border-color: transparent transparent transparent #68422d;
+    position: absolute;
+    right: 43%;
+}
+.right:hover{
+    border-width: 27px;
+}
+/* start footer */
+footer{
+    background-color: #68422d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    line-height: 1.8;
+    letter-spacing: 2px;
+    position: relative;
+    height: 15rem;
+}
+footer h2{
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    font-weight: bold;
+}
+footer .footer-1{
+    cursor:auto;
+    border: none;
+    color: #ccc;
+}
+footer h3{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+}
+footer .footer{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
